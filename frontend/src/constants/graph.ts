@@ -65,99 +65,91 @@ export const LAYOUT_CONFIGS = {
 
 // 节点类型配置
 export const NODE_TYPE_CONFIGS = {
-  'person': {
+  'concept': {
     color: '#5B8FF9',
-    size: 30,
-    label: '人物'
-  },
-  'organization': {
-    color: '#5AD8A6',
     size: 35,
-    label: '组织/宗门'
+    label: '概念/理论'
   },
-  'location': {
-    color: '#5D7092',
-    size: 25,
-    label: '地点'
+  'algorithm': {
+    color: '#E86452',
+    size: 30,
+    label: '算法'
   },
-  'item': {
+  'data_structure': {
+    color: '#5AD8A6',
+    size: 28,
+    label: '数据结构'
+  },
+  'technology': {
     color: '#F6BD16',
-    size: 20,
-    label: '物品/法宝'
+    size: 25,
+    label: '技术/工具'
   },
   'skill': {
-    color: '#E86452',
+    color: '#845EC2',
     size: 22,
-    label: '技能/功法'
+    label: '技能'
   },
-  'event': {
+  'career_level': {
+    color: '#FF6B6B',
+    size: 40,
+    label: '职业级别'
+  },
+  'domain': {
     color: '#6DC8EC',
-    size: 18,
-    label: '事件'
+    size: 38,
+    label: '专业领域'
+  },
+  'model': {
+    color: '#9C88FF',
+    size: 32,
+    label: '模型/架构'
+  },
+  'task': {
+    color: '#5D7092',
+    size: 26,
+    label: '任务类型'
+  },
+  'metric': {
+    color: '#FFC75F',
+    size: 20,
+    label: '评估指标'
   }
 }
 
 // 边类型配置
 export const EDGE_TYPE_CONFIGS = {
-  'relationship': {
-    color: '#5B8FF9',
-    label: '人际关系'
-  },
-  'family': {
-    color: '#E86452',
-    label: '家族关系'
-  },
-  'friend': {
-    color: '#5AD8A6',
-    label: '朋友'
-  },
-  'enemy': {
-    color: '#FF6B6B',
-    label: '敌对'
-  },
-  'master_student': {
-    color: '#845EC2',
-    label: '师徒'
-  },
-  'fellow_disciple': {
-    color: '#9C88FF',
-    label: '同门'
-  },
-  'dao_companion': {
-    color: '#FF9999',
-    label: '道侣'
-  },
-  'puppet': {
-    color: '#666666',
-    label: '傀儡分身'
-  },
-  'belongs_to': {
-    color: '#F6BD16',
-    label: '归属'
-  },
-  'located_at': {
-    color: '#5D7092',
-    label: '位于'
-  },
-  'birthplace': {
-    color: '#8B9DC3',
-    label: '出生地'
-  },
-  'residence': {
-    color: '#A2A2D0',
-    label: '居住地'
-  },
-  'owns': {
-    color: '#FFC75F',
-    label: '拥有'
-  },
-  'learned': {
-    color: '#E86452',
-    label: '学习'
-  },
-  'participated': {
+  'contains': {
     color: '#6DC8EC',
-    label: '参与'
+    label: '包含'
+  },
+  'is_a': {
+    color: '#5B8FF9',
+    label: '是'
+  },
+  'applies_to': {
+    color: '#5AD8A6',
+    label: '应用于'
+  },
+  'implements': {
+    color: '#F6BD16',
+    label: '实现'
+  },
+  'depends_on': {
+    color: '#E86452',
+    label: '依赖于'
+  },
+  'affects': {
+    color: '#845EC2',
+    label: '影响'
+  },
+  'compares_with': {
+    color: '#9C88FF',
+    label: '对比'
+  },
+  'evaluates': {
+    color: '#FFC75F',
+    label: '评估'
   }
 }
 
@@ -247,4 +239,4 @@ export const GRAPH_THEMES = {
 }
 
 // 默认选中节点类型
-export const DEFAULT_SELECTED_NODE_TYPES = ['person', 'organization']
+export const DEFAULT_SELECTED_NODE_TYPES = ['concept', 'domain', 'career_level']
