@@ -1,6 +1,6 @@
 export const appConfig = {
   title: 'Knowledge Graph',
-  subtitle: 'Template Project',
+  subtitle: 'Algorithm Project',
   qrCodeModal: {
     joinGroupTitle: '加入社群',
     sponsorTitle: '赞助项目',
